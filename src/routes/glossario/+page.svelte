@@ -417,35 +417,4 @@
 		margin: 0;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		.filtros-secao {
-			background: #1c1c1e;
-			border-color: #333;
-		}
-		.cat-btn {
-			border-color: #444;
-			color: #9ca3af;
-		}
-		.cat-btn:hover {
-			border-color: #0d7a6c;
-			color: #2dd4bf;
-		}
-		.resultados-secao {
-			background: #111;
-		}
-		.termo-card {
-			background: #1c1c1e;
-			border-color: #333;
-		}
-		.termo-header h3 {
-			color: #f9fafb;
-		}
-		.termo-card p {
-			color: #d1d5db;
-		}
-		.cat-tag {
-			background: #2a2a2e;
-			color: #9ca3af;
-		}
-	}
 </style>

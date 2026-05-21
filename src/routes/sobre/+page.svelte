@@ -545,8 +545,7 @@
 
 	/* Técnico */
 	.tecnico {
-		background: #1c1c1e;
-		color: white;
+		background: #f5f0e8;
 		padding: 4rem 1.5rem;
 	}
 
@@ -555,7 +554,7 @@
 		font-size: 1.75rem;
 		text-align: center;
 		margin: 0 0 2rem;
-		color: #f9fafb;
+		color: #1c1c1e;
 	}
 
 	.tec-grid {
@@ -565,70 +564,24 @@
 	}
 
 	.tec-item {
-		background: #2a2a2e;
+		background: white;
 		border-radius: 0.75rem;
 		padding: 1.25rem;
+		border: 1px solid #e5e0d8;
 	}
 
 	.tec-item h4 {
-		color: #d4a76a;
+		color: #0d7a6c;
 		margin: 0 0 0.5rem;
 		font-size: 0.9375rem;
 		font-family: 'Lora', Georgia, serif;
 	}
 
 	.tec-item p {
-		color: #9ca3af;
+		color: #6b7280;
 		font-size: 0.875rem;
 		line-height: 1.6;
 		margin: 0;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		.missao,
-		.principios,
-		.pilares {
-			background: #111;
-		}
-		.missao h2,
-		.principios h2,
-		.pilares h2,
-		.pilar h3,
-		.principio-card h3 {
-			color: #f9fafb;
-		}
-		.missao-texto p,
-		.bib-texto p {
-			color: #d1d5db;
-		}
-		.principio-card,
-		.pilar {
-			background: #1c1c1e;
-		}
-		.grupos {
-			background: #1a1a1a;
-		}
-		.grupos h2 {
-			color: #f9fafb;
-		}
-		.grupo-pill {
-			background: #1c1c1e;
-			color: #f9fafb;
-		}
-		.biblioteca {
-			background: #1a1a1a;
-		}
-		.bib-texto h2 {
-			color: #f9fafb;
-		}
-		.bib-contacto {
-			background: #1c1c1e;
-		}
-		.bib-contacto p {
-			color: #d1d5db;
-		}
-		.destaque-box {
-			background: #1c1c1e;
-		}
-	}
 </style>

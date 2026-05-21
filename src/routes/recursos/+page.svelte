@@ -169,7 +169,7 @@
 	.inner { max-width: 900px; margin: 0 auto; }
 
 	/* Linhas */
-	.linhas-secao { background: #1c1c1e; padding: 2.5rem 1.5rem; }
+	.linhas-secao { background: #0a3d36; padding: 2.5rem 1.5rem; }
 
 	.linhas-grid {
 		display: grid;
@@ -178,7 +178,8 @@
 	}
 
 	.linha-card {
-		background: #2a2a2e;
+		background: rgba(255,255,255,0.08);
+		border: 1px solid rgba(255,255,255,0.12);
 		border-radius: 0.75rem;
 		padding: 1.25rem 1.5rem;
 		text-decoration: none;
@@ -328,17 +329,4 @@
 
 	.btn-edu:hover { background: #0a6058; }
 
-	@media (prefers-color-scheme: dark) {
-		.ferramentas-cta-secao { background: #111; }
-		.ferramentas-cta { background: #1c1c1e; }
-		.cta-texto strong { color: #f9fafb; }
-		.cat-secao { background: #111; }
-		.cat-secao:nth-child(even) { background: #1a1a1a; }
-		.cat-secao h2 { color: #f9fafb; }
-		.recurso-card { background: #1c1c1e; border-color: #333; }
-		.recurso-nome { color: #f9fafb; }
-		.educadores-cta { background: #1a1a1a; }
-		.edu-cta-box { background: #1c1c1e; }
-		.edu-cta-box h2 { color: #f9fafb; }
-	}
 </style>
