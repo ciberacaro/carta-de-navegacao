@@ -81,26 +81,34 @@
 </section>
 
 <!-- Parceria Biblioteca / CM Gaia -->
-<section class="parceria" aria-label="Sobre o projeto">
+<section class="parceria" aria-label="Iniciativa da Biblioteca Municipal de Vila Nova de Gaia">
 	<div class="parceria-inner">
-		<div class="parceria-texto">
-			<p class="parceria-kicker">Literacia digital para a comunidade</p>
+		<div class="parceria-topo">
+			<p class="parceria-kicker">Uma iniciativa para a comunidade de Gaia</p>
+			<h2 class="parceria-titulo">Conhecimento para todos,<br>em todos os ecrãs.</h2>
 			<p class="parceria-desc">
-				Este recurso é <strong>oferecido gratuitamente</strong> pela
-				<strong>Biblioteca Municipal de Vila Nova de Gaia</strong> à sua comunidade,
-				com o apoio da <strong>Câmara Municipal de Gaia</strong> —
-				porque saber navegar no mundo digital é hoje tão essencial como saber ler.
+				Tal como a biblioteca sempre colocou livros ao alcance de todos,
+				este recurso coloca literacia digital ao alcance de toda a comunidade —
+				gratuitamente, sem publicidade e em português europeu.
 			</p>
 		</div>
-		<div class="parceria-logos">
-			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="parceria-logo-link">
-				<span class="parceria-logo-icon">🏛️</span>
-				<span>Biblioteca Municipal<br><small>Vila Nova de Gaia</small></span>
+		<div class="parceria-entidades">
+			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="entidade-card entidade-principal">
+				<div class="entidade-icon">🏛️</div>
+				<div class="entidade-info">
+					<strong>Biblioteca Municipal<br>de Vila Nova de Gaia</strong>
+					<span class="entidade-papel">Iniciativa e produção</span>
+					<span class="entidade-contacto">22 374 56 70 · bibliotecamunicipal@cm-gaia.pt</span>
+				</div>
 			</a>
-			<span class="parceria-e">+</span>
-			<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="parceria-logo-link">
-				<span class="parceria-logo-icon">🏅</span>
-				<span>Câmara Municipal<br><small>Vila Nova de Gaia</small></span>
+			<div class="entidade-apoio-label">com o apoio de</div>
+			<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="entidade-card">
+				<div class="entidade-icon">🏅</div>
+				<div class="entidade-info">
+					<strong>Câmara Municipal<br>de Vila Nova de Gaia</strong>
+					<span class="entidade-papel">Apoio institucional</span>
+					<span class="entidade-contacto">cm-gaia.pt</span>
+				</div>
 			</a>
 		</div>
 	</div>
@@ -349,65 +357,113 @@
 
 	/* ── Parceria ── */
 	.parceria {
-		background: #f5f0e8;
-		padding: 3rem 1.5rem;
-		border-top: 1px solid #e5e0d8;
+		background: #1c1c1e;
+		padding: 4rem 1.5rem;
+		border-top: 4px solid #0d7a6c;
 	}
 
 	.parceria-inner {
 		max-width: 900px;
 		margin: 0 auto;
 		display: flex;
-		align-items: center;
-		gap: 2.5rem;
+		gap: 3.5rem;
+		align-items: flex-start;
 		flex-wrap: wrap;
 	}
 
-	.parceria-texto { flex: 1; min-width: 260px; }
+	.parceria-topo { flex: 1; min-width: 260px; }
 
 	.parceria-kicker {
 		font-size: 0.75rem;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: #0d7a6c;
+		letter-spacing: 0.12em;
+		color: #d4a76a;
 		font-weight: 700;
-		margin-bottom: 0.625rem;
+		margin-bottom: 1rem;
+	}
+
+	.parceria-titulo {
+		font-family: 'Lora', Georgia, serif;
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		font-weight: 700;
+		color: #fff;
+		line-height: 1.25;
+		margin-bottom: 1rem;
 	}
 
 	.parceria-desc {
 		font-size: 0.9375rem;
-		color: #374151;
-		line-height: 1.7;
+		color: rgba(255,255,255,0.65);
+		line-height: 1.75;
+		max-width: 440px;
 	}
 
-	.parceria-logos {
+	.parceria-entidades {
 		display: flex;
-		align-items: center;
-		gap: 1.25rem;
+		flex-direction: column;
+		gap: 0.75rem;
+		min-width: 260px;
 		flex-shrink: 0;
 	}
 
-	.parceria-logo-link {
+	.entidade-card {
 		display: flex;
-		flex-direction: column;
 		align-items: center;
-		gap: 0.375rem;
+		gap: 1.125rem;
+		background: rgba(255,255,255,0.06);
+		border: 1px solid rgba(255,255,255,0.1);
+		border-radius: 0.875rem;
+		padding: 1.125rem 1.375rem;
 		text-decoration: none;
-		color: #374151;
-		text-align: center;
-		font-size: 0.8125rem;
-		font-weight: 600;
-		line-height: 1.3;
-		transition: color 0.2s;
+		color: inherit;
+		transition: all 0.2s;
 	}
 
-	.parceria-logo-link:hover { color: #0d7a6c; }
+	.entidade-card:hover {
+		background: rgba(255,255,255,0.1);
+		border-color: #0d7a6c;
+	}
 
-	.parceria-logo-icon { font-size: 2rem; }
+	.entidade-principal {
+		border-left: 4px solid #0d7a6c;
+	}
 
-	.parceria-logo-link small { font-size: 0.6875rem; font-weight: 400; color: #6b7280; }
+	.entidade-icon { font-size: 2rem; flex-shrink: 0; }
 
-	.parceria-e { font-size: 1.25rem; color: #9ca3af; font-weight: 300; }
+	.entidade-info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+
+	.entidade-info strong {
+		font-size: 0.9rem;
+		color: #fff;
+		font-weight: 700;
+		line-height: 1.35;
+	}
+
+	.entidade-papel {
+		font-size: 0.75rem;
+		color: #d4a76a;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+	}
+
+	.entidade-contacto {
+		font-size: 0.75rem;
+		color: rgba(255,255,255,0.4);
+	}
+
+	.entidade-apoio-label {
+		font-size: 0.75rem;
+		color: rgba(255,255,255,0.35);
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		padding: 0 0.5rem;
+	}
 
 	/* ── Responsive ── */
 	@media (max-width: 600px) {

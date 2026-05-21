@@ -70,6 +70,20 @@
 
 <div class="app" data-tema={tema}>
 
+<div class="barra-institucional" role="banner" aria-label="Iniciativa institucional">
+	<div class="barra-inner">
+		<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="barra-ent">
+			<span class="barra-icon">🏛️</span>
+			<span class="barra-nome">Biblioteca Municipal de Vila Nova de Gaia</span>
+		</a>
+		<span class="barra-sep" aria-hidden="true">·</span>
+		<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="barra-ent">
+			<span class="barra-icon">🏅</span>
+			<span class="barra-nome">Câmara Municipal de Vila Nova de Gaia</span>
+		</a>
+	</div>
+</div>
+
 <header>
 	<nav aria-label="Navegação principal">
 		<a href="/" class="logo">🧭 <span>Carta de Navegação</span></a>
@@ -115,20 +129,22 @@
 <footer>
 	<div class="footer-parceiros">
 		<div class="parceiros-inner">
-			<p class="parceiros-label">Uma oferta da</p>
-			<div class="parceiros-linha">
-				<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="parceiro">
+			<p class="parceiros-label">Uma iniciativa de</p>
+			<div class="parceiros-cards">
+				<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="parceiro-card parceiro-principal">
 					<span class="parceiro-icon">🏛️</span>
-					<span>
-						<strong>Biblioteca Municipal de Vila Nova de Gaia</strong>
+					<span class="parceiro-dados">
+						<strong>Biblioteca Municipal</strong>
+						<span>de Vila Nova de Gaia</span>
 						<small>22 374 56 70 · bibliotecamunicipal@cm-gaia.pt</small>
 					</span>
 				</a>
-				<span class="parceiros-sep">com o apoio de</span>
-				<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="parceiro">
+				<span class="parceiros-sep-txt">com o apoio de</span>
+				<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="parceiro-card">
 					<span class="parceiro-icon">🏅</span>
-					<span>
-						<strong>Câmara Municipal de Vila Nova de Gaia</strong>
+					<span class="parceiro-dados">
+						<strong>Câmara Municipal</strong>
+						<span>de Vila Nova de Gaia</span>
 						<small>cm-gaia.pt</small>
 					</span>
 				</a>
@@ -197,6 +213,50 @@
 	/* ── App wrapper ── */
 	.app { min-height: 100vh; display: flex; flex-direction: column; }
 	.app > footer { margin-top: auto; }
+
+	/* ── Barra institucional ── */
+	.barra-institucional {
+		background: #f5f0e8;
+		border-bottom: 1px solid #e0d9ce;
+		padding: 0.45rem 1.5rem;
+	}
+
+	.barra-inner {
+		max-width: 1100px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.barra-ent {
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-size: 0.775rem;
+		font-weight: 600;
+		color: #374151;
+		text-decoration: none;
+		letter-spacing: 0.01em;
+		transition: color 0.15s;
+	}
+
+	.barra-ent:hover { color: #0d7a6c; }
+
+	.barra-icon { font-size: 0.9rem; }
+
+	.barra-sep {
+		color: #9ca3af;
+		font-size: 0.875rem;
+	}
+
+	@media (max-width: 480px) {
+		.barra-nome { display: none; }
+		.barra-icon { font-size: 1.1rem; }
+		.barra-ent { gap: 0; }
+	}
 
 	/* ── Skip link ── */
 	.saltar-conteudo {
@@ -313,61 +373,73 @@
 
 	/* ── Footer parceiros ── */
 	.footer-parceiros {
-		background: #141414;
-		border-bottom: 1px solid #2a2a2e;
-		padding: 1.5rem 1.5rem;
+		background: #111;
+		border-bottom: 1px solid #222;
+		padding: 2rem 1.5rem;
 	}
 
 	.parceiros-inner {
-		max-width: 700px;
+		max-width: 800px;
 		margin: 0 auto;
-		text-align: center;
 		display: flex;
 		flex-direction: column;
-		gap: 0.875rem;
+		gap: 1.25rem;
+		align-items: center;
 	}
 
 	.parceiros-label {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: #6b7280;
+		letter-spacing: 0.12em;
+		color: #4b5563;
 		margin: 0;
+		font-weight: 600;
 	}
 
-	.parceiros-linha {
+	.parceiros-cards {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		gap: 1.25rem;
+		gap: 1rem;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
-	.parceiro {
+	.parceiro-card {
 		display: flex;
 		align-items: center;
-		gap: 0.625rem;
+		gap: 0.75rem;
 		text-decoration: none;
-		color: #d1d5db;
-		transition: color 0.2s;
+		background: rgba(255,255,255,0.04);
+		border: 1px solid rgba(255,255,255,0.08);
+		border-radius: 0.625rem;
+		padding: 0.875rem 1.125rem;
+		transition: all 0.2s;
 	}
 
-	.parceiro:hover { color: #fff; }
+	.parceiro-card:hover {
+		background: rgba(255,255,255,0.08);
+		border-color: #0d7a6c;
+	}
 
-	.parceiro-icon { font-size: 1.375rem; flex-shrink: 0; }
+	.parceiro-principal { border-left: 3px solid #0d7a6c; }
 
-	.parceiro span:last-child {
+	.parceiro-icon { font-size: 1.5rem; flex-shrink: 0; }
+
+	.parceiro-dados {
 		display: flex;
 		flex-direction: column;
-		text-align: left;
+		gap: 0.1rem;
 	}
 
-	.parceiro strong { font-size: 0.8125rem; color: #e5e7eb; line-height: 1.3; }
-	.parceiro small { font-size: 0.6875rem; color: #6b7280; }
+	.parceiro-dados strong { font-size: 0.8125rem; color: #e5e7eb; line-height: 1.2; }
+	.parceiro-dados span { font-size: 0.75rem; color: #9ca3af; }
+	.parceiro-dados small { font-size: 0.6875rem; color: #4b5563; }
 
-	.parceiros-sep {
-		font-size: 0.75rem;
-		color: #4b5563;
+	.parceiros-sep-txt {
+		font-size: 0.7rem;
+		color: #374151;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
 		white-space: nowrap;
 	}
 
