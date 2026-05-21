@@ -1,0 +1,330 @@
+<script>
+	const grupos = [
+		{ href: '/pre-escolar',    emoji: '🌱', nome: 'Pré-escolar',  idades: '3–5 anos',   desc: 'Primeiras descobertas no mundo digital' },
+		{ href: '/primeiro-ciclo', emoji: '⛵', nome: '1.º Ciclo',    idades: '6–9 anos',   desc: 'Explorar com curiosidade e cuidado' },
+		{ href: '/segundo-ciclo',  emoji: '🗺️', nome: '2.º Ciclo',    idades: '10–11 anos', desc: 'Traçar as primeiras rotas' },
+		{ href: '/terceiro-ciclo', emoji: '🧭', nome: '3.º Ciclo',    idades: '12–14 anos', desc: 'Navegar com autonomia crescente' },
+		{ href: '/secundario',     emoji: '⚓', nome: 'Secundário',   idades: '15–17 anos', desc: 'Definir a própria rota' },
+		{ href: '/adultos',        emoji: '🌐', nome: 'Adultos',      idades: '18–59 anos', desc: 'Navegar com experiência e confiança' },
+		{ href: '/seniores',       emoji: '📖', nome: 'Seniores',     idades: '60+ anos',   desc: 'Viajar com sabedoria no mundo digital' },
+	];
+
+	const competencias = [
+		{ emoji: '🔍', nome: 'Reconhecer', desc: 'Distinguir o real do falso: notícias, perfis, mensagens e esquemas' },
+		{ emoji: '🔒', nome: 'Proteger',   desc: 'Guardar dados pessoais, contas e dispositivos em segurança' },
+		{ emoji: '💬', nome: 'Comunicar',  desc: 'Partilhar com responsabilidade, respeito e consciência' },
+		{ emoji: '⚡', nome: 'Agir',       desc: 'Saber o que fazer quando algo correr mal na internet' },
+	];
+</script>
+
+<svelte:head>
+	<title>Carta de Navegação — Literacia digital para todos</title>
+	<meta name="description" content="Saber navegar é tão importante como saber ler. Aprende a mover-te no mundo digital com confiança — para todas as idades." />
+</svelte:head>
+
+<!-- Hero -->
+<section class="hero">
+	<div class="hero-inner">
+		<p class="hero-kicker">Literacia digital para todos</p>
+		<h1>Saber navegar é tão<br>importante como saber ler.</h1>
+		<p class="hero-sub">A Carta de Navegação é o teu guia para o mundo digital — para reconhecer, proteger, comunicar e agir com confiança.</p>
+		<div class="hero-ctas">
+			<a href="#grupos" class="btn-principal">Encontra o teu grupo</a>
+			<a href="/competencias" class="btn-secundario">Explorar competências</a>
+		</div>
+	</div>
+</section>
+
+<!-- Grupos etários -->
+<section class="grupos" id="grupos">
+	<div class="secao-inner">
+		<div class="secao-cabecalho">
+			<h2>A tua etapa da viagem</h2>
+			<p>O mundo digital tem linguagens diferentes consoante a etapa da vida. Escolhe o teu grupo para encontrar conteúdos adaptados à tua realidade.</p>
+		</div>
+		<div class="grupos-grelha">
+			{#each grupos as g}
+				<a href={g.href} class="grupo-card">
+					<span class="grupo-emoji" aria-hidden="true">{g.emoji}</span>
+					<div class="grupo-info">
+						<strong class="grupo-nome">{g.nome}</strong>
+						<span class="grupo-idades">{g.idades}</span>
+						<p class="grupo-desc">{g.desc}</p>
+					</div>
+					<span class="grupo-seta" aria-hidden="true">→</span>
+				</a>
+			{/each}
+		</div>
+	</div>
+</section>
+
+<!-- Competências -->
+<section class="competencias">
+	<div class="secao-inner">
+		<div class="secao-cabecalho">
+			<h2>O que aprenderás a fazer</h2>
+			<p>Quatro competências fundamentais que todos os navegadores digitais precisam de desenvolver, independentemente da idade.</p>
+		</div>
+		<div class="comp-grelha">
+			{#each competencias as c}
+				<div class="comp-card">
+					<span class="comp-emoji" aria-hidden="true">{c.emoji}</span>
+					<h3 class="comp-nome">{c.nome}</h3>
+					<p class="comp-desc">{c.desc}</p>
+				</div>
+			{/each}
+		</div>
+		<div class="comp-rodape">
+			<a href="/competencias" class="btn-explorar">Explorar todas as competências →</a>
+		</div>
+	</div>
+</section>
+
+<!-- Emergency strip -->
+<section class="emergencia-strip" aria-label="Linha de emergência digital">
+	<div class="emergencia-inner">
+		<div class="emergencia-texto">
+			<strong>Algo correu mal?</strong>
+			<p>Se sofreste uma burla, acesso não autorizado ou outra situação urgente — há ajuda disponível agora.</p>
+		</div>
+		<div class="emergencia-acoes">
+			<a href="/emergencia" class="btn-emergencia">Ver recursos de emergência</a>
+			<a href="tel:800219090" class="btn-tel">📞 800 21 90 90</a>
+		</div>
+	</div>
+</section>
+
+<style>
+	/* ── Hero ── */
+	.hero {
+		background: linear-gradient(135deg, #0d7a6c 0%, #0a5c52 100%);
+		color: #fff;
+		padding: 5rem 1.5rem;
+	}
+
+	.hero-inner { max-width: 760px; margin: 0 auto; }
+
+	.hero-kicker {
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		font-weight: 600;
+		color: rgba(255,255,255,0.7);
+		margin-bottom: 1rem;
+	}
+
+	h1 {
+		font-family: 'Lora', Georgia, serif;
+		font-size: clamp(2rem, 5vw, 3rem);
+		font-weight: 700;
+		line-height: 1.15;
+		margin-bottom: 1.25rem;
+		color: #fff;
+	}
+
+	.hero-sub {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: rgba(255,255,255,0.85);
+		max-width: 560px;
+		margin-bottom: 2rem;
+	}
+
+	.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+	.btn-principal {
+		background: #fff;
+		color: #0d7a6c;
+		font-weight: 700;
+		padding: 0.75rem 1.5rem;
+		border-radius: 8px;
+		font-size: 0.95rem;
+		transition: all 0.2s;
+		display: inline-block;
+	}
+	.btn-principal:hover { background: #f0faf8; transform: translateY(-1px); }
+
+	.btn-secundario {
+		background: transparent;
+		color: rgba(255,255,255,0.9);
+		border: 1.5px solid rgba(255,255,255,0.5);
+		font-weight: 600;
+		padding: 0.75rem 1.5rem;
+		border-radius: 8px;
+		font-size: 0.95rem;
+		transition: all 0.2s;
+		display: inline-block;
+	}
+	.btn-secundario:hover { border-color: #fff; color: #fff; }
+
+	/* ── Secções comuns ── */
+	.secao-inner { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+	.secao-cabecalho { max-width: 600px; margin-bottom: 3rem; }
+
+	.secao-cabecalho h2 {
+		font-family: 'Lora', Georgia, serif;
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		color: #1c1c1e;
+		margin-bottom: 0.75rem;
+	}
+
+	.secao-cabecalho p { color: #6b7280; font-size: 1rem; line-height: 1.65; }
+
+	/* ── Grupos etários ── */
+	.grupos { padding: 5rem 0; background: #f5f0e8; }
+
+	.grupos-grelha {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+		gap: 1rem;
+	}
+
+	.grupo-card {
+		background: #fff;
+		border: 1px solid #e5e0d8;
+		border-radius: 12px;
+		padding: 1.25rem 1.5rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		transition: all 0.2s;
+	}
+	.grupo-card:hover {
+		border-color: #0d7a6c;
+		box-shadow: 0 4px 16px rgba(13, 122, 108, 0.12);
+		transform: translateY(-2px);
+	}
+	.grupo-card:focus-visible {
+		outline: 3px solid #0d7a6c;
+		outline-offset: 2px;
+	}
+
+	.grupo-emoji { font-size: 2rem; flex-shrink: 0; line-height: 1; }
+
+	.grupo-info { flex: 1; min-width: 0; }
+
+	.grupo-nome {
+		display: block;
+		font-weight: 700;
+		font-size: 1rem;
+		color: #1c1c1e;
+		margin-bottom: 0.15rem;
+	}
+
+	.grupo-idades {
+		display: block;
+		font-size: 0.75rem;
+		color: #0d7a6c;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		margin-bottom: 0.35rem;
+	}
+
+	.grupo-desc { font-size: 0.85rem; color: #6b7280; line-height: 1.4; }
+
+	.grupo-seta {
+		color: #0d7a6c;
+		font-size: 1.1rem;
+		font-weight: 700;
+		opacity: 0;
+		transition: opacity 0.2s;
+		flex-shrink: 0;
+	}
+	.grupo-card:hover .grupo-seta { opacity: 1; }
+
+	/* ── Competências ── */
+	.competencias { padding: 5rem 0; background: #fff; }
+
+	.comp-grelha {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.comp-card {
+		background: #faf9f5;
+		border: 1px solid #e5e0d8;
+		border-radius: 12px;
+		padding: 2rem 1.5rem;
+		text-align: center;
+		transition: border-color 0.2s, box-shadow 0.2s;
+	}
+	.comp-card:hover {
+		border-color: #0d7a6c;
+		box-shadow: 0 4px 16px rgba(13, 122, 108, 0.08);
+	}
+
+	.comp-emoji { font-size: 2.25rem; display: block; margin-bottom: 1rem; line-height: 1; }
+
+	.comp-nome {
+		font-family: 'Lora', Georgia, serif;
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: #1c1c1e;
+		margin-bottom: 0.5rem;
+	}
+
+	.comp-desc { font-size: 0.88rem; color: #6b7280; line-height: 1.55; }
+
+	.comp-rodape { text-align: center; }
+
+	.btn-explorar {
+		display: inline-block;
+		color: #0d7a6c;
+		font-weight: 600;
+		font-size: 0.95rem;
+		border-bottom: 1.5px solid #0d7a6c;
+		padding-bottom: 0.1rem;
+		transition: opacity 0.2s;
+	}
+	.btn-explorar:hover { opacity: 0.75; }
+
+	/* ── Emergência strip ── */
+	.emergencia-strip {
+		background: #1c1c1e;
+		color: #fff;
+		padding: 2.5rem 1.5rem;
+	}
+
+	.emergencia-inner {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		flex-wrap: wrap;
+	}
+
+	.emergencia-texto { flex: 1; min-width: 200px; }
+	.emergencia-texto strong { display: block; font-size: 1.1rem; margin-bottom: 0.35rem; }
+	.emergencia-texto p { font-size: 0.9rem; color: rgba(255,255,255,0.65); }
+
+	.emergencia-acoes { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+	.btn-emergencia {
+		background: #c0392b; color: #fff;
+		font-weight: 700; padding: 0.7rem 1.4rem;
+		border-radius: 8px; font-size: 0.9rem;
+		transition: background 0.2s; display: inline-block;
+	}
+	.btn-emergencia:hover { background: #a93226; }
+
+	.btn-tel {
+		background: rgba(255,255,255,0.1); color: #fff;
+		font-weight: 700; padding: 0.7rem 1.25rem;
+		border-radius: 8px; font-size: 0.9rem;
+		border: 1px solid rgba(255,255,255,0.2);
+		transition: background 0.2s; display: inline-block;
+	}
+	.btn-tel:hover { background: rgba(255,255,255,0.2); }
+
+	/* ── Responsive ── */
+	@media (max-width: 600px) {
+		.hero { padding: 3.5rem 1.25rem; }
+		.grupos, .competencias { padding: 3.5rem 0; }
+		.emergencia-inner { flex-direction: column; align-items: flex-start; }
+	}
+</style>
