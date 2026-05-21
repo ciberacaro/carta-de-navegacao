@@ -72,15 +72,15 @@
 
 <div class="barra-institucional" role="banner" aria-label="Iniciativa institucional">
 	<div class="barra-inner">
-		<span class="barra-ent">
+		<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="barra-ent">
 			<span class="barra-icon">🏛️</span>
 			<span class="barra-nome">Biblioteca Pública Municipal de Vila Nova de Gaia</span>
-		</span>
+		</a>
 		<span class="barra-sep" aria-hidden="true">·</span>
-		<span class="barra-ent">
+		<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="barra-ent">
 			<span class="barra-icon">🏅</span>
 			<span class="barra-nome">Câmara Municipal de Vila Nova de Gaia</span>
-		</span>
+		</a>
 	</div>
 </div>
 
