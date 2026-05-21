@@ -1,4 +1,4 @@
-const CACHE = 'cartanav-v1';
+const CACHE = 'cartanav-v2';
 
 const PRECACHE = [
 	'/',
