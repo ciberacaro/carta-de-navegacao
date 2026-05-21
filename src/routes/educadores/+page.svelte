@@ -263,9 +263,9 @@
 			<div class="bib-box">
 				<span class="bib-icon">🏛️</span>
 				<div>
-					<h2>Sessões na Biblioteca Municipal de Gaia</h2>
+					<h2>Sessões na Biblioteca Pública Municipal de Vila Nova de Gaia</h2>
 					<p>
-						A Biblioteca Municipal de Vila Nova de Gaia pode acolher ou co-organizar sessões de literacia digital
+						A Biblioteca Pública Municipal de Vila Nova de Gaia pode acolher ou co-organizar sessões de literacia digital
 						para escolas, associações e grupos da comunidade.
 						Entre em contacto para agendar ou para pedir apoio na preparação de materiais.
 					</p>

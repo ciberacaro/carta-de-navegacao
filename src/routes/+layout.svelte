@@ -72,15 +72,15 @@
 
 <div class="barra-institucional" role="banner" aria-label="Iniciativa institucional">
 	<div class="barra-inner">
-		<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="barra-ent">
+		<span class="barra-ent">
 			<span class="barra-icon">🏛️</span>
-			<span class="barra-nome">Biblioteca Municipal de Vila Nova de Gaia</span>
-		</a>
+			<span class="barra-nome">Biblioteca Pública Municipal de Vila Nova de Gaia</span>
+		</span>
 		<span class="barra-sep" aria-hidden="true">·</span>
-		<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="barra-ent">
+		<span class="barra-ent">
 			<span class="barra-icon">🏅</span>
 			<span class="barra-nome">Câmara Municipal de Vila Nova de Gaia</span>
-		</a>
+		</span>
 	</div>
 </div>
 
@@ -134,7 +134,7 @@
 				<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="parceiro-card parceiro-principal">
 					<span class="parceiro-icon">🏛️</span>
 					<span class="parceiro-dados">
-						<strong>Biblioteca Municipal</strong>
+						<strong>Biblioteca Pública Municipal</strong>
 						<span>de Vila Nova de Gaia</span>
 						<small>22 374 56 70 · bibliotecamunicipal@cm-gaia.pt</small>
 					</span>

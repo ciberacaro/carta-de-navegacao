@@ -22,28 +22,11 @@
 	<meta name="description" content="Saber navegar é tão importante como saber ler. Aprende a mover-te no mundo digital com confiança — para todas as idades." />
 </svelte:head>
 
-<!-- Faixa de apresentação institucional -->
-<section class="banda-apresentacao" aria-label="Iniciativa institucional">
-	<div class="banda-inner">
-		<div class="banda-linha-deco" aria-hidden="true"></div>
-		<div class="banda-texto">
-			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="banda-entidade">
-				🏛️ <span>Biblioteca Municipal de Vila Nova de Gaia</span>
-			</a>
-			<span class="banda-apresenta">apresenta, com o apoio da</span>
-			<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="banda-entidade banda-entidade-apoio">
-				🏅 <span>Câmara Municipal de Vila Nova de Gaia</span>
-			</a>
-		</div>
-		<div class="banda-linha-deco" aria-hidden="true"></div>
-	</div>
-</section>
-
 <!-- Hero -->
 <section class="hero">
 	<div class="hero-inner">
 		<div class="hero-creditos" aria-label="Apresentado por">
-			<span class="hero-creditos-nome">Biblioteca Municipal · Câmara Municipal de Vila Nova de Gaia</span>
+			<span class="hero-creditos-nome">Biblioteca Pública Municipal · Câmara Municipal de Vila Nova de Gaia</span>
 			<em class="hero-creditos-verb">apresenta</em>
 			<div class="hero-creditos-linha" aria-hidden="true"></div>
 		</div>
@@ -103,7 +86,7 @@
 </section>
 
 <!-- Parceria Biblioteca / CM Gaia -->
-<section class="parceria" aria-label="Iniciativa da Biblioteca Municipal de Vila Nova de Gaia">
+<section class="parceria" aria-label="Iniciativa da Biblioteca Pública Municipal de Vila Nova de Gaia">
 	<div class="parceria-inner">
 		<div class="parceria-topo">
 			<p class="parceria-kicker">Uma iniciativa para a comunidade de Gaia</p>
@@ -118,7 +101,7 @@
 			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="entidade-card entidade-principal">
 				<div class="entidade-icon">🏛️</div>
 				<div class="entidade-info">
-					<strong>Biblioteca Municipal<br>de Vila Nova de Gaia</strong>
+					<strong>Biblioteca Pública Municipal<br>de Vila Nova de Gaia</strong>
 					<span class="entidade-papel">Iniciativa e produção</span>
 					<span class="entidade-contacto">22 374 56 70 · bibliotecamunicipal@cm-gaia.pt</span>
 				</div>

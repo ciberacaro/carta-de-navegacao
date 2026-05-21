@@ -77,7 +77,7 @@
 					<div class="bib-icon">🏛️</div>
 				</div>
 				<div class="bib-texto">
-					<h2>Uma oferta da Biblioteca Municipal de Vila Nova de Gaia</h2>
+					<h2>Uma oferta da Biblioteca Pública Municipal de Vila Nova de Gaia</h2>
 					<p>
 						Este projeto é oferecido pela <strong>Biblioteca Pública Municipal de Vila Nova de Gaia</strong>
 						como recurso livre e gratuito para a comunidade. A biblioteca tem uma missão histórica de promover
