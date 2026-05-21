@@ -29,7 +29,7 @@
 		<h1>Saber navegar é tão<br>importante como saber ler.</h1>
 		<p class="hero-sub">A Carta de Navegação é o teu guia para o mundo digital — para reconhecer, proteger, comunicar e agir com confiança.</p>
 		<div class="hero-ctas">
-			<a href="#grupos" class="btn-principal">Encontra o teu grupo</a>
+			<a href="#grupos" class="btn-principal">Escolhe a tua faixa etária</a>
 			<a href="/competencias" class="btn-secundario">Explorar competências</a>
 		</div>
 	</div>
