@@ -1,19 +1,19 @@
 <script>
 	const grupos = [
 		{ href: '/pre-escolar',    emoji: '🌱', nome: 'Pré-escolar',  idades: '3–5 anos',   desc: 'Primeiras descobertas no mundo digital' },
-		{ href: '/primeiro-ciclo', emoji: '⛵', nome: '1.º Ciclo',    idades: '6–9 anos',   desc: 'Explorar com curiosidade e cuidado' },
-		{ href: '/segundo-ciclo',  emoji: '🗺️', nome: '2.º Ciclo',    idades: '10–11 anos', desc: 'Traçar as primeiras rotas' },
-		{ href: '/terceiro-ciclo', emoji: '🧭', nome: '3.º Ciclo',    idades: '12–14 anos', desc: 'Navegar com autonomia crescente' },
-		{ href: '/secundario',     emoji: '⚓', nome: 'Secundário',   idades: '15–17 anos', desc: 'Definir a própria rota' },
+		{ href: '/primeiro-ciclo', emoji: '⛵', nome: '1.º Ciclo',    idades: '6–10 anos',  desc: 'Explorar com curiosidade e cuidado' },
+		{ href: '/segundo-ciclo',  emoji: '🗺️', nome: '2.º Ciclo',    idades: '10–12 anos', desc: 'Traçar as primeiras rotas' },
+		{ href: '/terceiro-ciclo', emoji: '🧭', nome: '3.º Ciclo',    idades: '12–15 anos', desc: 'Navegar com autonomia crescente' },
+		{ href: '/secundario',     emoji: '⚓', nome: 'Secundário',   idades: '15–18 anos', desc: 'Definir a própria rota' },
 		{ href: '/adultos',        emoji: '🌐', nome: 'Adultos',      idades: '18–59 anos', desc: 'Navegar com experiência e confiança' },
-		{ href: '/seniores',       emoji: '📖', nome: 'Seniores',     idades: '60+ anos',   desc: 'Viajar com sabedoria no mundo digital' },
+		{ href: '/seniores',       emoji: '📖', nome: 'Ainda Mais Adultos', idades: '60+ anos',   desc: 'Viajar com sabedoria no mundo digital' },
 	];
 
 	const competencias = [
-		{ emoji: '🔍', nome: 'Reconhecer', desc: 'Distinguir o real do falso: notícias, perfis, mensagens e esquemas' },
-		{ emoji: '🔒', nome: 'Proteger',   desc: 'Guardar dados pessoais, contas e dispositivos em segurança' },
-		{ emoji: '💬', nome: 'Comunicar',  desc: 'Partilhar com responsabilidade, respeito e consciência' },
-		{ emoji: '⚡', nome: 'Agir',       desc: 'Saber o que fazer quando algo correr mal na internet' },
+		{ emoji: '🔍', nome: 'Reconhecer', desc: 'Distinguir o real do falso: notícias, perfis, mensagens e esquemas', href: '/competencias#reconhecer' },
+		{ emoji: '🔒', nome: 'Proteger',   desc: 'Guardar dados pessoais, contas e dispositivos em segurança',         href: '/competencias#proteger' },
+		{ emoji: '💬', nome: 'Comunicar',  desc: 'Partilhar com responsabilidade, respeito e consciência',             href: '/competencias#comunicar' },
+		{ emoji: '⚡', nome: 'Agir',       desc: 'Saber o que fazer quando algo correr mal na internet',               href: '/competencias#agir' },
 	];
 </script>
 
@@ -72,11 +72,11 @@
 		</div>
 		<div class="comp-grelha">
 			{#each competencias as c}
-				<div class="comp-card">
+				<a href={c.href} class="comp-card">
 					<span class="comp-emoji" aria-hidden="true">{c.emoji}</span>
 					<h3 class="comp-nome">{c.nome}</h3>
 					<p class="comp-desc">{c.desc}</p>
-				</div>
+				</a>
 			{/each}
 		</div>
 		<div class="comp-rodape">
@@ -386,11 +386,15 @@
 		border-radius: 12px;
 		padding: 2rem 1.5rem;
 		text-align: center;
-		transition: border-color 0.2s, box-shadow 0.2s;
+		transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+		text-decoration: none;
+		color: inherit;
+		display: block;
 	}
 	.comp-card:hover {
 		border-color: #0d7a6c;
 		box-shadow: 0 4px 16px rgba(13, 122, 108, 0.08);
+		transform: translateY(-2px);
 	}
 
 	.comp-emoji { font-size: 2.25rem; display: block; margin-bottom: 1rem; line-height: 1; }

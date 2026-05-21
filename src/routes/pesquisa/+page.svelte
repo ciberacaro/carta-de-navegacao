@@ -29,12 +29,12 @@
 
 		// Faixas etárias
 		{ titulo: 'Pré-escolar (3–5 anos)', url: '/pre-escolar', tipo: 'faixa', tags: ['crianças', 'pré-escolar', 'tablet', 'pais', 'adulto', '3 anos', '4 anos', '5 anos'] },
-		{ titulo: '1.º Ciclo (6–9 anos)', url: '/primeiro-ciclo', tipo: 'faixa', tags: ['primeiro ciclo', 'criança', 'pesquisa', 'password', 'escola primária'] },
-		{ titulo: '2.º Ciclo (10–11 anos)', url: '/segundo-ciclo', tipo: 'faixa', tags: ['segundo ciclo', 'redes sociais', 'cyberbullying', 'privacidade', 'jogos'] },
-		{ titulo: '3.º Ciclo (12–14 anos)', url: '/terceiro-ciclo', tipo: 'faixa', tags: ['terceiro ciclo', 'pensamento crítico', 'dados', 'identidade digital', 'RGPD', 'desinformação'] },
-		{ titulo: 'Secundário (15–17 anos)', url: '/secundario', tipo: 'faixa', tags: ['secundário', 'portfólio', 'IA', 'inteligência artificial', 'saúde mental', 'redes sociais'] },
+		{ titulo: '1.º Ciclo (6–10 anos)', url: '/primeiro-ciclo', tipo: 'faixa', tags: ['primeiro ciclo', 'criança', 'pesquisa', 'password', 'escola primária'] },
+		{ titulo: '2.º Ciclo (10–12 anos)', url: '/segundo-ciclo', tipo: 'faixa', tags: ['segundo ciclo', 'redes sociais', 'cyberbullying', 'privacidade', 'jogos'] },
+		{ titulo: '3.º Ciclo (12–15 anos)', url: '/terceiro-ciclo', tipo: 'faixa', tags: ['terceiro ciclo', 'pensamento crítico', 'dados', 'identidade digital', 'RGPD', 'desinformação'] },
+		{ titulo: 'Secundário (15–18 anos)', url: '/secundario', tipo: 'faixa', tags: ['secundário', 'portfólio', 'IA', 'inteligência artificial', 'saúde mental', 'redes sociais'] },
 		{ titulo: 'Adultos (18–59 anos)', url: '/adultos', tipo: 'faixa', tags: ['adultos', 'trabalho', 'MB Way', 'banco', 'phishing', 'RGPD', 'fraude'] },
-		{ titulo: 'Seniores (60+ anos)', url: '/seniores', tipo: 'faixa', tags: ['seniores', 'idosos', 'WhatsApp', 'burla', 'Chave Móvel Digital', 'SNS24', 'Finanças'] },
+		{ titulo: 'Ainda Mais Adultos (60+ anos)', url: '/seniores', tipo: 'faixa', tags: ['seniores', 'ainda mais adultos', 'idosos', 'WhatsApp', 'burla', 'Chave Móvel Digital', 'SNS24', 'Finanças'] },
 
 		// Temas / conceitos-chave
 		{ titulo: 'Phishing e emails falsos', url: '/glossario#phishing', tipo: 'tema', tags: ['phishing', 'email falso', 'banco', 'CTT', 'link suspeito'] },
@@ -343,12 +343,4 @@
 
 	.resultado-tags { font-size: 0.8125rem; color: #9ca3af; margin: 0; }
 
-	@media (prefers-color-scheme: dark) {
-		.resultados-secao { background: #111; }
-		.sugestao-btn { background: #1c1c1e; border-color: #333; color: #d1d5db; }
-		.nav-card { background: #1c1c1e; border-color: #333; color: #d1d5db; }
-		.resultado-card { background: #1c1c1e; border-color: #333; }
-		.resultado-titulo { color: #f9fafb; }
-		.sem-resultados p { color: #9ca3af; }
-	}
 </style>

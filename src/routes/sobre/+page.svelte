@@ -4,18 +4,18 @@
 		{ emoji: '🇵🇹', titulo: 'Para Portugal', descricao: 'Exemplos reais, contactos portugueses, legislação europeia. Conteúdo contextualizado para quem vive em Portugal.' },
 		{ emoji: '♿', titulo: 'Para todos', descricao: 'WCAG 2.1 AA, modo escuro, alto contraste, tamanho de letra ajustável. Acessível a quem mais precisa.' },
 		{ emoji: '🔒', titulo: 'Sem tracking', descricao: 'Zero cookies de rastreio, zero publicidade, sem recolha de dados. Ferramentas 100% client-side.' },
-		{ emoji: '🌱', titulo: 'Desde cedo', descricao: 'Desde o pré-escolar até seniores. A literacia digital não tem idade para começar.' },
+		{ emoji: '🌱', titulo: 'Desde cedo', descricao: 'Desde o pré-escolar até aos mais adultos. A literacia digital não tem idade para começar.' },
 		{ emoji: '⚡', titulo: 'Prático e direto', descricao: 'Guias acionáveis, não teorias. O que fazer agora, em linguagem que todos entendem.' }
 	];
 
 	const grupos = [
 		{ emoji: '🌱', nome: 'Pré-escolar', idade: '3–5 anos', rota: '/pre-escolar' },
-		{ emoji: '⛵', nome: '1.º Ciclo', idade: '6–9 anos', rota: '/primeiro-ciclo' },
-		{ emoji: '🗺️', nome: '2.º Ciclo', idade: '10–11 anos', rota: '/segundo-ciclo' },
-		{ emoji: '🧭', nome: '3.º Ciclo', idade: '12–14 anos', rota: '/terceiro-ciclo' },
-		{ emoji: '⚓', nome: 'Secundário', idade: '15–17 anos', rota: '/secundario' },
+		{ emoji: '⛵', nome: '1.º Ciclo', idade: '6–10 anos', rota: '/primeiro-ciclo' },
+		{ emoji: '🗺️', nome: '2.º Ciclo', idade: '10–12 anos', rota: '/segundo-ciclo' },
+		{ emoji: '🧭', nome: '3.º Ciclo', idade: '12–15 anos', rota: '/terceiro-ciclo' },
+		{ emoji: '⚓', nome: 'Secundário', idade: '15–18 anos', rota: '/secundario' },
 		{ emoji: '🌐', nome: 'Adultos', idade: '18–59 anos', rota: '/adultos' },
-		{ emoji: '📖', nome: 'Seniores', idade: '60+ anos', rota: '/seniores' }
+		{ emoji: '📖', nome: 'Ainda Mais Adultos', idade: '60+ anos', rota: '/seniores' }
 	];
 </script>
 
@@ -48,7 +48,7 @@
 						<em>o que saber, como fazer, onde ir quando algo corre mal.</em>
 					</p>
 					<p>
-						O conteúdo está organizado por faixa etária — do pré-escolar aos seniores — porque as necessidades,
+						O conteúdo está organizado por faixa etária — do pré-escolar aos mais adultos — porque as necessidades,
 						os riscos e a linguagem adequada são diferentes em cada etapa da vida.
 					</p>
 				</div>

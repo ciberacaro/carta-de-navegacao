@@ -4,7 +4,7 @@
 	const dados = {
 		emoji: '🧭',
 		titulo: '3.º Ciclo',
-		subtitulo: '12–14 anos · Navegar com autonomia',
+		subtitulo: '12–15 anos · Navegar com autonomia',
 		cor: '#5f27cd',
 		fundo: '#F0EBFF',
 		variante: 'juvenil',

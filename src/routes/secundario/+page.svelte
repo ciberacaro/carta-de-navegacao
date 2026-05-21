@@ -4,7 +4,7 @@
 	const dados = {
 		emoji: '⚓',
 		titulo: 'Secundário',
-		subtitulo: '15–17 anos · Definir a própria rota',
+		subtitulo: '15–18 anos · Definir a própria rota',
 		cor: '#0d7a6c',
 		fundo: '#E8F4F2',
 		variante: 'jovem-adulto',

@@ -27,7 +27,7 @@
 			id: 'primeiro-ciclo',
 			emoji: '⛵',
 			faixa: '1.º Ciclo',
-			idades: '6–9 anos',
+			idades: '6–10 anos',
 			cor: '#26de81',
 			contexto: 'Já leem e escrevem. Podem trabalhar em pequenos grupos. Gostam de jogos e desafios. Foco em pesquisa, passwords e comunicação responsável.',
 			materiais: ['Ficha de trabalho "Verdade ou mentira na internet"', 'Cartões de situações (mensagens simuladas)', 'Acesso a computador/tablet para demonstração de pesquisa', 'Marcadores e folhas para criar a "password secreta"'],
@@ -49,7 +49,7 @@
 			id: 'segundo-ciclo',
 			emoji: '🗺️',
 			faixa: '2.º Ciclo',
-			idades: '10–11 anos',
+			idades: '10–12 anos',
 			cor: '#54a0ff',
 			contexto: 'Início da vida nas redes sociais (muitas vezes antes dos 13 anos legais). Pressão dos pares muito forte. Foco em privacidade, comunicação e redes sociais.',
 			materiais: ['Computadores/tablets para a atividade prática', 'Ficha de análise de perfil de rede social (simulado)', 'Questionário anónimo "Já aconteceu contigo?" (pré-sessão)'],
@@ -71,7 +71,7 @@
 			id: 'terceiro-ciclo',
 			emoji: '🧭',
 			faixa: '3.º Ciclo',
-			idades: '12–14 anos',
+			idades: '12–15 anos',
 			cor: '#5f27cd',
 			contexto: 'Utilizadores ativos de múltiplas plataformas. Identidade digital em formação. Muito recetivos a debates e desafios críticos. Foco em pensamento crítico, dados e desinformação.',
 			materiais: ['Acesso à internet para fact-checking ao vivo', 'Exemplos de notícias (reais e falsas) impressas ou em ecrã', 'Ficha "Os meus dados valem quanto?" (estimativa de dados recolhidos)'],
@@ -93,7 +93,7 @@
 			id: 'secundario',
 			emoji: '⚓',
 			faixa: 'Secundário',
-			idades: '15–17 anos',
+			idades: '15–18 anos',
 			cor: '#0d7a6c',
 			contexto: 'Quase adultos digitais. Produtores de conteúdo, utilizadores de IA, pensando em carreira. Foco em IA, reputação digital, segurança avançada e futuro profissional.',
 			materiais: ['Acesso a um chatbot de IA (ChatGPT ou similar)', 'Exemplos de portfólios digitais (LinkedIn, Behance)', 'Ficha de autoavaliação de pegada digital'],
@@ -113,7 +113,7 @@
 		{
 			id: 'adultos-seniores',
 			emoji: '📖',
-			faixa: 'Adultos e Seniores',
+			faixa: 'Adultos e Ainda Mais Adultos',
 			idades: '18+ anos',
 			cor: '#6C5CE7',
 			contexto: 'Sessões em contexto de biblioteca, centro de dia ou associação. Foco prático: fraudes, passwords, serviços públicos online (Finanças, SNS24, Chave Móvel Digital). Ritmo mais lento, exemplos muito concretos.',
@@ -578,24 +578,4 @@
 
 	.bib-cta:hover { background: #0a6058; }
 
-	@media (prefers-color-scheme: dark) {
-		.intro-secao { background: #111; }
-		.intro-texto h2, .sessoes-titulo { color: #f9fafb; }
-		.intro-texto p { color: #d1d5db; }
-		.sessoes-secao { background: #111; }
-		.sessao-item { background: #1c1c1e; border-color: #333; }
-		.s-info strong { color: #f9fafb; }
-		.sessao-corpo { background: #1a1a1a; }
-		.sessao-contexto { background: #1c1c1e; }
-		.sessao-contexto p { color: #d1d5db; }
-		.plano-item { background: #1c1c1e; }
-		.plano-corpo strong { color: #f9fafb; }
-		.sessao-col h3, .sessao-col-side h3 { color: #f9fafb; }
-		.materiais-box, .dicas-box { background: #1c1c1e; }
-		.materiais-lista li, .dicas-lista li { color: #d1d5db; }
-		.biblioteca-secao { background: #1a1a1a; }
-		.bib-box { background: #1c1c1e; }
-		.bib-box h2 { color: #f9fafb; }
-		.bib-box p { color: #9ca3af; }
-	}
 </style>

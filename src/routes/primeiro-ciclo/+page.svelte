@@ -4,7 +4,7 @@
 	const dados = {
 		emoji: '⛵',
 		titulo: '1.º Ciclo',
-		subtitulo: '6–9 anos · Primeiras descobertas',
+		subtitulo: '6–10 anos · Primeiras descobertas',
 		cor: '#26de81',
 		fundo: '#E8FDF3',
 		variante: 'infantil',

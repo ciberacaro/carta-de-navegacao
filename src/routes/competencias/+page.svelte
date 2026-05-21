@@ -334,7 +334,7 @@
 			<a href="/terceiro-ciclo">🧭 3.º Ciclo</a>
 			<a href="/secundario">⚓ Secundário</a>
 			<a href="/adultos">🌐 Adultos</a>
-			<a href="/seniores">📖 Seniores</a>
+			<a href="/seniores">📖 Ainda Mais Adultos</a>
 		</div>
 	</div>
 </section>

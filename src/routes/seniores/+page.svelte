@@ -3,7 +3,7 @@
 
 	const dados = {
 		emoji: '📖',
-		titulo: 'Seniores',
+		titulo: 'Ainda Mais Adultos',
 		subtitulo: '60+ anos · Viajar com sabedoria',
 		cor: '#6C5CE7',
 		fundo: '#F0EBFF',

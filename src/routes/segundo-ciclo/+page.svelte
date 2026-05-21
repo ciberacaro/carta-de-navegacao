@@ -4,7 +4,7 @@
 	const dados = {
 		emoji: '🗺️',
 		titulo: '2.º Ciclo',
-		subtitulo: '10–11 anos · Traçar as primeiras rotas',
+		subtitulo: '10–12 anos · Traçar as primeiras rotas',
 		cor: '#54a0ff',
 		fundo: '#EBF5FF',
 		variante: 'juvenil',
