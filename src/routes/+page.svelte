@@ -80,6 +80,32 @@
 	</div>
 </section>
 
+<!-- Parceria Biblioteca / CM Gaia -->
+<section class="parceria" aria-label="Sobre o projeto">
+	<div class="parceria-inner">
+		<div class="parceria-texto">
+			<p class="parceria-kicker">Literacia digital para a comunidade</p>
+			<p class="parceria-desc">
+				Este recurso é <strong>oferecido gratuitamente</strong> pela
+				<strong>Biblioteca Municipal de Vila Nova de Gaia</strong> à sua comunidade,
+				com o apoio da <strong>Câmara Municipal de Gaia</strong> —
+				porque saber navegar no mundo digital é hoje tão essencial como saber ler.
+			</p>
+		</div>
+		<div class="parceria-logos">
+			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="parceria-logo-link">
+				<span class="parceria-logo-icon">🏛️</span>
+				<span>Biblioteca Municipal<br><small>Vila Nova de Gaia</small></span>
+			</a>
+			<span class="parceria-e">+</span>
+			<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="parceria-logo-link">
+				<span class="parceria-logo-icon">🏅</span>
+				<span>Câmara Municipal<br><small>Vila Nova de Gaia</small></span>
+			</a>
+		</div>
+	</div>
+</section>
+
 <!-- Emergency strip -->
 <section class="emergencia-strip" aria-label="Linha de emergência digital">
 	<div class="emergencia-inner">
@@ -320,6 +346,68 @@
 		transition: background 0.2s; display: inline-block;
 	}
 	.btn-tel:hover { background: rgba(255,255,255,0.2); }
+
+	/* ── Parceria ── */
+	.parceria {
+		background: #f5f0e8;
+		padding: 3rem 1.5rem;
+		border-top: 1px solid #e5e0d8;
+	}
+
+	.parceria-inner {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		gap: 2.5rem;
+		flex-wrap: wrap;
+	}
+
+	.parceria-texto { flex: 1; min-width: 260px; }
+
+	.parceria-kicker {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #0d7a6c;
+		font-weight: 700;
+		margin-bottom: 0.625rem;
+	}
+
+	.parceria-desc {
+		font-size: 0.9375rem;
+		color: #374151;
+		line-height: 1.7;
+	}
+
+	.parceria-logos {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		flex-shrink: 0;
+	}
+
+	.parceria-logo-link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.375rem;
+		text-decoration: none;
+		color: #374151;
+		text-align: center;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		line-height: 1.3;
+		transition: color 0.2s;
+	}
+
+	.parceria-logo-link:hover { color: #0d7a6c; }
+
+	.parceria-logo-icon { font-size: 2rem; }
+
+	.parceria-logo-link small { font-size: 0.6875rem; font-weight: 400; color: #6b7280; }
+
+	.parceria-e { font-size: 1.25rem; color: #9ca3af; font-weight: 300; }
 
 	/* ── Responsive ── */
 	@media (max-width: 600px) {

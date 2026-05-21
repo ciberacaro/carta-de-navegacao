@@ -113,6 +113,28 @@
 </div>
 
 <footer>
+	<div class="footer-parceiros">
+		<div class="parceiros-inner">
+			<p class="parceiros-label">Uma oferta da</p>
+			<div class="parceiros-linha">
+				<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="parceiro">
+					<span class="parceiro-icon">🏛️</span>
+					<span>
+						<strong>Biblioteca Municipal de Vila Nova de Gaia</strong>
+						<small>22 374 56 70 · bibliotecamunicipal@cm-gaia.pt</small>
+					</span>
+				</a>
+				<span class="parceiros-sep">com o apoio de</span>
+				<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="parceiro">
+					<span class="parceiro-icon">🏅</span>
+					<span>
+						<strong>Câmara Municipal de Vila Nova de Gaia</strong>
+						<small>cm-gaia.pt</small>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="footer-inner">
 		<p class="footer-logo">🧭 Carta de Navegação</p>
 		<p class="footer-mote">Saber navegar é tão importante como saber ler.</p>
@@ -123,7 +145,6 @@
 			<a href="/ferramentas">Ferramentas</a>
 			<a href="/glossario">Glossário</a>
 			<a href="/educadores">Educadores</a>
-			<a href="/contacto">Contacto</a>
 			<a href="/sobre">Sobre</a>
 		</nav>
 		<p class="footer-note">Linha Internet Segura <a href="tel:800219090">800 21 90 90</a> · APAV <a href="tel:116006">116 006</a> · Emergência <a href="tel:112">112</a></p>
@@ -289,6 +310,66 @@
 	.footer-note { font-size: 0.78rem; color: #bbb; }
 	.footer-note a { color: #ccc; text-decoration: underline; }
 	.footer-note a:hover { color: #fff; }
+
+	/* ── Footer parceiros ── */
+	.footer-parceiros {
+		background: #141414;
+		border-bottom: 1px solid #2a2a2e;
+		padding: 1.5rem 1.5rem;
+	}
+
+	.parceiros-inner {
+		max-width: 700px;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 0.875rem;
+	}
+
+	.parceiros-label {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #6b7280;
+		margin: 0;
+	}
+
+	.parceiros-linha {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1.25rem;
+		flex-wrap: wrap;
+	}
+
+	.parceiro {
+		display: flex;
+		align-items: center;
+		gap: 0.625rem;
+		text-decoration: none;
+		color: #d1d5db;
+		transition: color 0.2s;
+	}
+
+	.parceiro:hover { color: #fff; }
+
+	.parceiro-icon { font-size: 1.375rem; flex-shrink: 0; }
+
+	.parceiro span:last-child {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+	.parceiro strong { font-size: 0.8125rem; color: #e5e7eb; line-height: 1.3; }
+	.parceiro small { font-size: 0.6875rem; color: #6b7280; }
+
+	.parceiros-sep {
+		font-size: 0.75rem;
+		color: #4b5563;
+		white-space: nowrap;
+	}
 
 	/* ── Responsive ── */
 	@media (max-width: 768px) {

@@ -1,4 +1,4 @@
-const CACHE = 'cartanav-v2';
+const CACHE = 'cartanav-v3';
 
 const PRECACHE = [
 	'/',
@@ -8,6 +8,8 @@ const PRECACHE = [
 	'/glossario',
 	'/sobre',
 	'/emergencia',
+	'/educadores',
+	'/pesquisa',
 	'/pre-escolar',
 	'/primeiro-ciclo',
 	'/segundo-ciclo',
