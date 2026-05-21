@@ -25,6 +25,15 @@
 <!-- Hero -->
 <section class="hero">
 	<div class="hero-inner">
+		<div class="hero-chips">
+			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="hero-chip">
+				🏛️ Biblioteca Municipal de Vila Nova de Gaia
+			</a>
+			<span class="hero-chip-sep" aria-hidden="true">·</span>
+			<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="hero-chip">
+				🏅 Câmara Municipal de Vila Nova de Gaia
+			</a>
+		</div>
 		<p class="hero-kicker">Literacia digital para todos</p>
 		<h1>Saber navegar é tão<br>importante como saber ler.</h1>
 		<p class="hero-sub">A Carta de Navegação é o teu guia para o mundo digital — para reconhecer, proteger, comunicar e agir com confiança.</p>
@@ -137,6 +146,44 @@
 	}
 
 	.hero-inner { max-width: 760px; margin: 0 auto; }
+
+	.hero-chips {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		margin-bottom: 1.25rem;
+	}
+
+	.hero-chip {
+		display: inline-flex;
+		align-items: center;
+		background: rgba(255,255,255,0.12);
+		border: 1px solid rgba(255,255,255,0.25);
+		color: rgba(255,255,255,0.9);
+		font-size: 0.8rem;
+		font-weight: 600;
+		padding: 0.35rem 0.875rem;
+		border-radius: 2rem;
+		text-decoration: none;
+		transition: all 0.2s;
+		white-space: nowrap;
+	}
+
+	.hero-chip:hover {
+		background: rgba(255,255,255,0.2);
+		border-color: rgba(255,255,255,0.5);
+		color: #fff;
+	}
+
+	.hero-chip-sep {
+		color: rgba(255,255,255,0.35);
+		font-size: 0.875rem;
+	}
+
+	@media (max-width: 480px) {
+		.hero-chip-sep { display: none; }
+	}
 
 	.hero-kicker {
 		font-size: 0.85rem;
