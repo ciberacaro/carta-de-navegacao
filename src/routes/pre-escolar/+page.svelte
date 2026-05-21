@@ -39,7 +39,7 @@
 		dicas: [
 			'Pede sempre a um adulto antes de usar o telemóvel ou tablet',
 			'Vê sempre vídeos e jogos com um adulto por perto',
-			'Se algo te assustar, chama logo um grande',
+			'Se algo te assustar, chama logo um adulto',
 			'Quando o adulto disser para parar, paramos com alegria',
 			'O teu nome e onde moras são segredos — não dizes a ninguém na internet'
 		],
