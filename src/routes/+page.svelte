@@ -22,17 +22,30 @@
 	<meta name="description" content="Saber navegar é tão importante como saber ler. Aprende a mover-te no mundo digital com confiança — para todas as idades." />
 </svelte:head>
 
+<!-- Faixa de apresentação institucional -->
+<section class="banda-apresentacao" aria-label="Iniciativa institucional">
+	<div class="banda-inner">
+		<div class="banda-linha-deco" aria-hidden="true"></div>
+		<div class="banda-texto">
+			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="banda-entidade">
+				🏛️ <span>Biblioteca Municipal de Vila Nova de Gaia</span>
+			</a>
+			<span class="banda-apresenta">apresenta, com o apoio da</span>
+			<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="banda-entidade banda-entidade-apoio">
+				🏅 <span>Câmara Municipal de Vila Nova de Gaia</span>
+			</a>
+		</div>
+		<div class="banda-linha-deco" aria-hidden="true"></div>
+	</div>
+</section>
+
 <!-- Hero -->
 <section class="hero">
 	<div class="hero-inner">
-		<div class="hero-chips">
-			<a href="https://www.cm-gaia.pt/pt/cidade/espacos-municipais/bibliotecas/" target="_blank" rel="noopener noreferrer" class="hero-chip">
-				🏛️ Biblioteca Municipal de Vila Nova de Gaia
-			</a>
-			<span class="hero-chip-sep" aria-hidden="true">·</span>
-			<a href="https://www.cm-gaia.pt" target="_blank" rel="noopener noreferrer" class="hero-chip">
-				🏅 Câmara Municipal de Vila Nova de Gaia
-			</a>
+		<div class="hero-creditos" aria-label="Apresentado por">
+			<span class="hero-creditos-nome">Biblioteca Municipal · Câmara Municipal de Vila Nova de Gaia</span>
+			<em class="hero-creditos-verb">apresenta</em>
+			<div class="hero-creditos-linha" aria-hidden="true"></div>
 		</div>
 		<p class="hero-kicker">Literacia digital para todos</p>
 		<h1>Saber navegar é tão<br>importante como saber ler.</h1>
@@ -147,42 +160,101 @@
 
 	.hero-inner { max-width: 760px; margin: 0 auto; }
 
-	.hero-chips {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		flex-wrap: wrap;
-		margin-bottom: 1.25rem;
+	/* ── Faixa de apresentação ── */
+	.banda-apresentacao {
+		background: #0f0f0f;
+		padding: 1.625rem 1.5rem;
+		border-bottom: 1px solid #1e1e1e;
 	}
 
-	.hero-chip {
-		display: inline-flex;
+	.banda-inner {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
 		align-items: center;
-		background: rgba(255,255,255,0.12);
-		border: 1px solid rgba(255,255,255,0.25);
-		color: rgba(255,255,255,0.9);
-		font-size: 0.8rem;
+		gap: 1.5rem;
+	}
+
+	.banda-linha-deco {
+		flex: 1;
+		height: 1px;
+		background: linear-gradient(to right, transparent, #2a4a45);
+	}
+
+	.banda-linha-deco:last-child {
+		background: linear-gradient(to left, transparent, #2a4a45);
+	}
+
+	.banda-texto {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.banda-entidade {
+		font-family: 'Lora', Georgia, serif;
+		font-size: 0.9375rem;
 		font-weight: 600;
-		padding: 0.35rem 0.875rem;
-		border-radius: 2rem;
+		color: #e2e8e6;
 		text-decoration: none;
-		transition: all 0.2s;
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+		transition: color 0.2s;
 		white-space: nowrap;
 	}
 
-	.hero-chip:hover {
-		background: rgba(255,255,255,0.2);
-		border-color: rgba(255,255,255,0.5);
-		color: #fff;
-	}
+	.banda-entidade:hover { color: #4db6ac; }
 
-	.hero-chip-sep {
-		color: rgba(255,255,255,0.35);
+	.banda-entidade-apoio {
+		color: #94b3ae;
 		font-size: 0.875rem;
 	}
 
-	@media (max-width: 480px) {
-		.hero-chip-sep { display: none; }
+	.banda-apresenta {
+		font-family: 'Lora', Georgia, serif;
+		font-style: italic;
+		font-size: 0.875rem;
+		color: #4b5563;
+		white-space: nowrap;
+	}
+
+	@media (max-width: 640px) {
+		.banda-linha-deco { display: none; }
+		.banda-entidade, .banda-entidade-apoio { font-size: 0.8125rem; }
+	}
+
+	/* ── Hero opening credits ── */
+	.hero-creditos {
+		margin-bottom: 1.75rem;
+	}
+
+	.hero-creditos-nome {
+		display: block;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		color: rgba(255,255,255,0.5);
+		font-weight: 600;
+		margin-bottom: 0.35rem;
+	}
+
+	.hero-creditos-verb {
+		display: block;
+		font-family: 'Lora', Georgia, serif;
+		font-style: italic;
+		font-size: 1.125rem;
+		color: #d4a76a;
+		margin-bottom: 0.875rem;
+	}
+
+	.hero-creditos-linha {
+		width: 3rem;
+		height: 2px;
+		background: rgba(255,255,255,0.25);
 	}
 
 	.hero-kicker {
